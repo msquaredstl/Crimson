@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+<?php
+
+namespace Msquared\CustPriceRange\Model\ResourceModel;
+
+use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
+
+class CustPriceRange extends AbstractDb
+{
+    protected function _construct()
+    {
+        $this->_init('custpricerange', 'id');
+    }
+=======
+<?php
+
+namespace Msquared\CustPriceRange\Model\ResourceModel;
+
+use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
+
+class CustPriceRange extends AbstractDb
+{
+    protected function _construct()
+    {
+        $this->_init('custpricerange', 'id');
+    }
+>>>>>>> 2db5e2004d1971edbece4a141618afda67190cd4
+}

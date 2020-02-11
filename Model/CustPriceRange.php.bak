@@ -1,0 +1,34 @@
+<<<<<<< HEAD
+<?php
+
+namespace Msquared\CustPriceRange\Model;
+
+use Magento\Framework\Model\AbstractModel;
+
+class CustPriceRange extends AbstractModel
+{
+    /**
+     * Define resource model
+     */
+    protected function _construct()
+    {
+        $this->_init('Msquared\CustPriceRange\Model\ResourceModel\CustPriceRange');
+    }
+=======
+<?php
+
+namespace Msquared\CustPriceRange\Model;
+
+use Magento\Framework\Model\AbstractModel;
+
+class CustPriceRange extends AbstractModel
+{
+    /**
+     * Define resource model
+     */
+    protected function _construct()
+    {
+        $this->_init('Msquared\CustPriceRange\Model\ResourceModel\CustPriceRange');
+    }
+>>>>>>> 2db5e2004d1971edbece4a141618afda67190cd4
+}
