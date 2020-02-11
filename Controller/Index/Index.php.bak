@@ -1,0 +1,30 @@
+<?php
+
+namespace Msquared\CustPriceRange\Controller\Index;
+
+use Magento\Framework\App\Action\Action;
+use Magento\Framework\App\Action\Context;
+use Msquared\CustPriceRange\Model\CustPriceRange;
+
+class Index extends Action
+{
+    protected $_modelHelloFactory;
+
+    public function __construct(
+        Context $context, 
+        HelloFactory $modelCustPriceRangeFactory
+    ) {
+        parent::__construct($context);
+        $this->_modelCustPriceRangeFactory = $modelCustPriceRangeFactory;
+    }
+
+    public function execute()
+    {
+
+        $resultPage = $this->_modelCustPriceRangeFactory->create();
+        $collection = $resultPage->getCollection();
+        var_dump($collection->getData());
+        exit;
+
+    }
+}

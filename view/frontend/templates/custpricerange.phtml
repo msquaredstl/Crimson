@@ -1,0 +1,37 @@
+<?php 
+
+?>
+<span> Custom Price Range </span>
+<div>
+
+   <form id="pricerange" action="<?php echo $block->getFormAction() ?>" method="post">
+      <input type="number" id="lowrange" name="lowrange" min="0" data-validate="{required:true}">
+      <input type="number" id="highrange" name="highrange" min="0" data-validate="{required:true}">
+      <select name="sortbyprice" id="sortbyprice">
+         <option value="A">Ascending</option>
+         <option value="D">Descending</option>
+      </select>
+      <input type="submit">
+   </form>
+</div>
+
+
+<div>
+   <?php
+   
+   $collection = $block->getProductCollection;
+foreach ($collection as $_product) {
+    echo $_product->getThumbnail()  . ' - ' . $_product->getSku() . ' - ' . $_product->getName() . ' - ' . $_product->getQty()  . ' - ' . $_product->getPrice() . ' - ' . $_product->getProductUrl() . '<br />';
+}
+         
+         /*$searchedProducts = $this->_productCollectionFactory->create();    
+$searchedProducts = $searchedProducts->addAttributeToSelect('*')
+                        ->addAttributeToFilter('price', array(
+                                array('gt' => $lowrange, 'lt' => $highrange),
+                            )
+                        );*/
+         
+    ?>
+</div>
+
+
