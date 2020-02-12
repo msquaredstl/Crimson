@@ -1,16 +1,7 @@
-<<<<<<< HEAD
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
         <route id="custpricerange" frontName="custpricerange">
             <module name="Msquared_CustPriceRange" />
         </route>
     </router>
-=======
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
-    <router id="standard">
-        <route id="custpricerange" frontName="custpricerange">
-            <module name="Msquared_CustPriceRange" />
-        </route>
-    </router>
->>>>>>> 2db5e2004d1971edbece4a141618afda67190cd4
 </config>
