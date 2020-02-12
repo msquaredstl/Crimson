@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
    <update handle="customer_account" />
 
@@ -18,24 +17,4 @@
       </referenceContainer>
    </body>
 </page>
-=======
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
-   <update handle="customer_account" />
 
-   <head>
-      <script src="Msquared_CustPriceRange::js/cpr.js" />
-   </head>
-  
-   <body>
-      <referenceBlock name="page.main.title">
-         <action method="setPageTitle">
-            <argument translate="true" name="title" xsi:type="string">Custom Price Range</argument>
-         </action>
-      </referenceBlock>
-      <referenceContainer name="content">
-         <block class="Magento\Framework\View\Element\Template" name="custpricerange" template="Msquared_CustPriceRange::custpricerange.phtml">
-         </block>
-      </referenceContainer>
-   </body>
-</page>
->>>>>>> 2db5e2004d1971edbece4a141618afda67190cd4
