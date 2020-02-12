@@ -12,7 +12,7 @@
          </action>
       </referenceBlock>
       <referenceContainer name="content">
-         <block class="Magento\Framework\View\Element\Template" name="custpricerange" template="Msquared_CustPriceRange::custpricerange.phtml">
+         <block class="Msquared\CustPriceRange\Block\CustPriceRange" name="custpricerange" template="Msquared_CustPriceRange::custpricerange.phtml">
          </block>
       </referenceContainer>
    </body>

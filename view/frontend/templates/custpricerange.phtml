@@ -18,18 +18,13 @@
 
 <div>
    <?php
-   
-   $collection = $block->getProductCollection;
-foreach ($collection as $_product) {
-    echo $_product->getThumbnail()  . ' - ' . $_product->getSku() . ' - ' . $_product->getName() . ' - ' . $_product->getQty()  . ' - ' . $_product->getPrice() . ' - ' . $_product->getProductUrl() . '<br />';
-}
-         
-         /*$searchedProducts = $this->_productCollectionFactory->create();    
+        
+      /*   $searchedProducts = $this->_productCollectionFactory->create();    
 $searchedProducts = $searchedProducts->addAttributeToSelect('*')
                         ->addAttributeToFilter('price', array(
                                 array('gt' => $lowrange, 'lt' => $highrange),
                             )
-                        );*/
-         
+                        );
+        */ 
     ?>
 </div>
