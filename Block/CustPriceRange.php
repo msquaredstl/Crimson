@@ -1,7 +1,7 @@
 <?php
 namespace Msquared\CustPriceRange\Block;
 class CustPriceRange extends \Magento\Framework\View\Element\Template
-   {    
+   /*{    
     protected $_productCollectionFactory;
         
     public function __construct(
@@ -21,9 +21,9 @@ class CustPriceRange extends \Magento\Framework\View\Element\Template
         $collection->setPageSize(10); // fetching only 3 products
         return $collection;
     }
-}
+}*/
 
-/*{    
+{    
    protected $_productCollectionFactory;
 
    public function __construct(
@@ -54,5 +54,5 @@ class CustPriceRange extends \Magento\Framework\View\Element\Template
      return '/custpricerange/customer/index';
    }
    
-}*/
+}
 ?>
