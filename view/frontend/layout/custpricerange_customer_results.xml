@@ -1,9 +1,5 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
    <update handle="customer_account" />
-
-   <head>
-      <script src="Msquared_CustPriceRange::js/cpr.js" />
-   </head>
   
    <body>
       <referenceBlock name="page.main.title">
@@ -12,7 +8,7 @@
          </action>
       </referenceBlock>
       <referenceContainer name="content">
-         <block class="Msquared\CustPriceRange\Block\Index" name="range_result" template="Msquared_CustPriceRange::result.phtml">
+         <block class="Msquared\CustPriceRange\Block\Index" name="range_results" template="Msquared_CustPriceRange::results.phtml">
          </block>
       </referenceContainer>
    </body>

@@ -1,9 +1,11 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
    <update handle="customer_account" />
 
+   <!--
    <head>
       <script src="Msquared_CustPriceRange::js/cpr.js" />
    </head>
+   -->
   
    <body>
       <referenceBlock name="page.main.title">

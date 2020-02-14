@@ -5,8 +5,8 @@
 <div>
 
    <form id="pricerange" name="pricerange" method="post">
-      <input type="number" id="lowrange" name="lowrange" min="0" data-validate="{required:true}">
-      <input type="number" id="highrange" name="highrange" min="0" data-validate="{required:true}">
+      <input type="number" id="lowrange" name="lowrange" min="0" data-validate="{required:true}" placeholder="Low Range">
+      <input type="number" id="highrange" name="highrange" min="0" data-validate="{required:true}" placeholder="High Range">
       <select name="sortbyprice" id="sortbyprice">
          <option value="A">Ascending</option>
          <option value="D">Descending</option>
@@ -17,7 +17,7 @@
 
 
 <div>
-  <?php
+   <?php
    /*
    $collection = $block->getProductCollection();
          
@@ -41,16 +41,34 @@ $searchedProducts = $searchedProducts->addAttributeToSelect('*')
 
 
 <script>
-$(document).ready(function() {
-    $("#pricerange").submit(function(){
-        jQuery.ajax({
-        url: "/msquaredstl/custpreicerange/result/result",
-        type: "POST",
-        data: {lowrange:lowrange,highrange:highrange,sortbyprice:sortbyprice},
-        success: function(response){
-            console.log(response);
-        }
-    });
-    });
-});
+   $(document).ready(function() {
+      $("#pricerange").submit(function() {
+
+         var dataForm = $('#pricerange');
+         dataForm.mage('validation', {});
+
+         var lowrange = dataForm.find('input[name="lowrange"]').val();
+         var highrange = dataForm.find('input[name="highrange"]').val();
+
+
+         if ((highrange >= lowrange) && (highrange <= (lowrange * 5))) {
+
+            jQuery.ajax({
+               url: "/custpricerange/customer/results",
+               type: "POST",
+               data: {
+                  lowrange: lowrange,
+                  highrange: highrange,
+                  sortbyprice: sortbyprice
+               },
+               success: function(response) {
+                  console.log(response);
+               }
+            })
+         } else {
+            return false;
+         };
+      });
+   });
+
 </script>
